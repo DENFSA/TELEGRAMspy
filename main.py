@@ -3,8 +3,9 @@ import asyncio
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command, CommandStart
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
+import os
 
-TOKEN = "8675416046:AAECDb2UYJuODlIDzhV1yQSndNxOmlsKtcY"
+TOKEN = os.getenv("8675416046:AAECDb2UYJuODlIDzhV1yQSndNxOmlsKtcY")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
